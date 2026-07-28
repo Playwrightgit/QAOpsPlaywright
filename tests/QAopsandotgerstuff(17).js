@@ -209,3 +209,28 @@
 //now lets do one thing lets change something on calender test cases on your playwright local, just add some comments
 //like test changes, we will push it to github main branch and our execution will trigger
 //use the below git commands
+
+//git status  //to check if any changes are made on any file on project
+//git add <filename where changes are made>   //adding the changes to staging
+//git commit -m "some comment"   //commiting the changes
+//git push origin main //pushing the change to main branch.
+
+//so once changes are pushed then pipeline will run as per the .yml file
+
+
+//same is the case for pull request, when we create pull request and try to merge our changes from one branch to main branch then 
+//also pipeline will run as per the .yml file
+
+//follow the below commands for pull request
+
+// git checkout -b jeet_fixes   checkout our code from git into new branch jeet_fixes
+//git add <filename where changes are made>   //adding the changes to staging
+//git commit -m "some comment"   //commiting the changes
+//git push origin jeet_fixes //pushing the change to jeet_fixes branch.
+
+//now go back to github and check the pull requests and once u click on create pull request then pipeline will run again in jeet_fixes branch
+//once it runs and we have option to merge into main branch
+//now we can put one check /validation on github that once pipeline is run for the sub branch then if it fails then merge to main branch should be disabled
+//so for testing purpose first time dothe pull request and merge into main branch and the set this validation
+//how to set the validation> go to github> settings> rules> new rule set , set branch for main and master. check results check for pass checkbox add test action (its there on yml file its our job name)
+//thats it , better go to rule set and u will understand.
