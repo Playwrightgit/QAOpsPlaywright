@@ -233,4 +233,4 @@
 //now we can put one check /validation on github that once pipeline is run for the sub branch then if it fails then merge to main branch should be disabled
 //so for testing purpose first time dothe pull request and merge into main branch and the set this validation
 //how to set the validation> go to github> settings> rules> new rule set , set branch for main and master. check results check for pass checkbox add test action (its there on yml file its our job name)
-//thats it , better go to rule set and u will understand.
+//thats it , better go to rule set and you will understand.
